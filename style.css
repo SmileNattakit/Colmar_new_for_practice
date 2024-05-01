@@ -1,0 +1,62 @@
+* {
+  font-family: "Schibsted Grotesk", sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+
+    align-items: center;
+    padding-left: 24px;
+  }
+  .nav-desktop--logo img {
+    height: 38px;
+    position: relative;
+    top: 8px;
+  }
+  .nav-desktop--logo {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  .nav-desktop--menu ul {
+    list-style-type: none;
+    display: flex;
+  }
+  .nav-desktop--menu li {
+    padding-right: 16px;
+    font-weight: 600;
+    font-size: 95%;
+  }
+  .nav-desktop--menu a {
+    color: rgb(66, 66, 66);
+  }
+  .nav-desktop--menu a:hover {
+    color: rgb(68, 0, 177);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: flex;
+    height: 64px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  }
+}
