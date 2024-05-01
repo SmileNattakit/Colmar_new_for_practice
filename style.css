@@ -57,6 +57,7 @@ a {
   }
   .hero--text {
     padding-top: 10%;
+    width: 40vw;
   }
   .hero--text button {
     padding: 8px 100px;
@@ -64,10 +65,56 @@ a {
     font-weight: 600;
     color: white;
     cursor: pointer;
+    width: 30vw;
   }
   .hero--text button:hover {
     background-color: rgb(96, 100, 100);
   }
+  .information {
+    display: flex;
+    width: 100vw;
+  }
+  .information--leftbox img {
+    width: 100%;
+  }
+  .information--leftbox {
+    width: 60vw;
+    padding: 32px 24px;
+  }
+  .information--rightbox {
+    width: 40%;
+    padding-top: 1.5%;
+  }
+
+  .information--rightbox--card {
+    width:auto;
+    display: flex;  
+
+  }
+  .information--rightbox--card:hover {background-color: rgb(194, 194, 194);
+ 
+  }
+  .information--rightbox--card img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+  }
+  .information--rightbox--card--textbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .information--rightbox--card--textbox p,
+  a {
+    padding: 8px;
+  }
+  .information--rightbox--card--textbox a {
+    font-weight: 700;
+    color: blueviolet;
+    font-size: 90%;
+  }
+  .information--mobile {display: none;}
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -90,29 +137,56 @@ a {
     font-weight: 600;
     color: white;
     cursor: pointer;
+    width: 80vw;
   }
   .hero--text {
     padding: 32px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
   }
   .hero--text button:hover {
     background-color: rgb(96, 100, 100);
+
   }
   .hero--image {
     width: 100vw;
   }
+  .information--leftbox {
+    display: none;
+  }
+  .information--rightbox{
+  display: none;}
+  .information--mobile {
+    padding: 16px;
+}
+.information--mobile--card:hover {
+    background-color: rgb(194, 194, 194); 
+}
+.information--mobile--card--textbox {
+    padding: 16px ;
+}
+  .information--mobile--card--textbox a {
+    font-weight: 700;
+    color: blueviolet;
+    font-size: 90%;
+}
 }
 
 .text--1 {
-  font-size: 190%;
+  font-size: 290%;
   font-weight: 800;
   color: rgb(66, 66, 66);
 }
 
 .text--2 {
-  font-size: 120%;
+  font-size: 170%;
   font-weight: 600;
   color: rgb(66, 66, 66);
 }
+
+.text--3 {
+  font-size: 90%;
+  color: rgb(66, 66, 66);
+}rgb(100, 99, 99)
