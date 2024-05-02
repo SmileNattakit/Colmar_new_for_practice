@@ -6,6 +6,24 @@
   max-width: 100%;
   box-sizing: border-box;
 }
+body {
+  .text--1 {
+    font-size: 290%;
+    font-weight: 800;
+    color: rgb(66, 66, 66);
+  }
+
+  .text--2 {
+    font-size: 170%;
+    font-weight: 600;
+    color: rgb(66, 66, 66);
+  }
+
+  .text--3 {
+    font-size: 90%;
+    color: rgb(66, 66, 66);
+  }
+}
 a {
   text-decoration: none;
 }
@@ -65,7 +83,7 @@ a {
     font-weight: 600;
     color: white;
     cursor: pointer;
-    width: 30vw;
+    width: 22vw;
   }
   .hero--text button:hover {
     background-color: rgb(96, 100, 100);
@@ -87,12 +105,11 @@ a {
   }
 
   .information--rightbox--card {
-    width:auto;
-    display: flex;  
-
+    width: auto;
+    display: flex;
   }
-  .information--rightbox--card:hover {background-color: rgb(194, 194, 194);
- 
+  .information--rightbox--card:hover {
+    background-color: rgb(194, 194, 194);
   }
   .information--rightbox--card img {
     width: 35%;
@@ -113,8 +130,92 @@ a {
     color: blueviolet;
     font-size: 90%;
   }
-  .information--mobile {display: none;}
+  .information--mobile {
+    display: none;
+  }
+  .course {
+    background-color: rgb(194, 194, 194);
+  }
+  .course .text--1 {
+    padding-top: 32px;
+    justify-content: center;
+    display: flex;
+  }
+  .course--cardbox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 72px 32px 72px;
+    justify-content: center;
+  }
+  .course--cardbox--card {
+    padding: 32px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .course--cardbox--card--text {
+    background-color: white;
 
+    height: fit-content;
+    min-height: 22vh;
+  }
+  .course--cardbox--card p {
+    padding: 8px;
+  }
+  .course--cardbox--card div {
+    padding: 16px 16px 32px 16px;
+  }
+  .course--cardbox--card--text .text--2 {
+    word-wrap: break-word;
+  }
+  .thesis-container {
+    display: flex;
+  }
+  .thesis .text--1 {
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+  }
+  .thesis-leftbox {
+    width: 60vw;
+    padding: 0px 24px 32px 24px;
+  }
+  .thesis-leftbox .text--2 {
+    padding: 24px 0px 8px;
+  }
+  .thesis-rightbox {
+    width: 40vw;
+    height: fit-content;
+  }
+  .thesis-rightbox--card {
+    display: flex;
+    align-items: center;
+  }
+  .thesis-rightbox--card:hover {
+    background-color: rgb(168, 155, 155);
+    cursor: pointer;
+  }
+  .thesis-rightbox--card img {
+    height: auto;
+    padding: 16px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0px 20px 16px;
+  }
+  footer div {
+    display: flex;
+    font-weight: 600;
+  }
+  footer div .text--3 {
+    padding: 0px 10px;
+    cursor: pointer;
+  }
+  footer div .text--3:hover {
+    color: rgb(68, 0, 177);
+  }
 }
 
 @media only screen and (max-width: 720px) {
@@ -127,6 +228,15 @@ a {
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
+  }
+  .nav-mobile div {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  .nav-mobile div:hover {
+    background-color: grey;
   }
   .hero {
     background-color: rgb(211, 199, 199);
@@ -148,7 +258,6 @@ a {
   }
   .hero--text button:hover {
     background-color: rgb(96, 100, 100);
-
   }
   .hero--image {
     width: 100vw;
@@ -156,37 +265,66 @@ a {
   .information--leftbox {
     display: none;
   }
-  .information--rightbox{
-  display: none;}
+  .information--rightbox {
+    display: none;
+  }
   .information--mobile {
     padding: 16px;
-}
-.information--mobile--card:hover {
-    background-color: rgb(194, 194, 194); 
-}
-.information--mobile--card--textbox {
-    padding: 16px ;
-}
+  }
+  .information--mobile--card:hover {
+    background-color: rgb(194, 194, 194);
+  }
+  .information--mobile--card--textbox {
+    padding: 16px;
+  }
   .information--mobile--card--textbox a {
     font-weight: 700;
     color: blueviolet;
     font-size: 90%;
+  }
+  .course .text--1 {
+    display: flex;
+    justify-content: center;
+  }
+  .course--cardbox {
+    padding: 16px;
+  }
+  .course--cardbox img {
+    display: none;
+  }
+  .course--cardbox .text--3 {
+    display: none;
+  }
+  .course--cardbox--card {
+    background-color: rgb(194, 194, 194);
+    padding: 16px 16px 24px 16px;
+    margin: 8px;
+    cursor: pointer;
+  }
+  .course--cardbox--card:hover {
+    background-color: rgb(150, 131, 131);
+  }
+  .thesis .text--1 {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0px 16px;
+  }
+  .thesis-rightbox {
+    display: none;
+  }
+  .thesis-leftbox p {
+    display: none;
+  }
+  .thesis-leftbox video {
+    padding-bottom: 24px;
+  }
+  footer {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    font-weight: 500;
+  }
+  footer div {
+    display: none;
+  }
 }
-}
-
-.text--1 {
-  font-size: 290%;
-  font-weight: 800;
-  color: rgb(66, 66, 66);
-}
-
-.text--2 {
-  font-size: 170%;
-  font-weight: 600;
-  color: rgb(66, 66, 66);
-}
-
-.text--3 {
-  font-size: 90%;
-  color: rgb(66, 66, 66);
-}rgb(100, 99, 99)
